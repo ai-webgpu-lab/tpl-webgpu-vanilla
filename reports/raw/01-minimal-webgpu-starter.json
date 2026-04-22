@@ -1,0 +1,85 @@
+{
+  "meta": {
+    "repo": "tpl-webgpu-vanilla",
+    "commit": "d80d247",
+    "timestamp": "2026-04-22T06:54:53.975Z",
+    "owner": "ai-webgpu-lab",
+    "track": "infra",
+    "scenario": "minimal-webgpu-starter",
+    "notes": "Raw WebGPU canvas starter with adapter/device acquisition and animated triangle sample.; automation=playwright-chromium",
+    "capture_context": {
+      "tool": "playwright-chromium",
+      "browser_name": "Chromium",
+      "browser_version": "147.0.7727.15",
+      "headless": true,
+      "captured_at": "2026-04-22T06:54:55.889Z",
+      "captured_by": "zzragida"
+    }
+  },
+  "environment": {
+    "browser": {
+      "name": "Chrome",
+      "version": "147.0.7727.15"
+    },
+    "os": {
+      "name": "Linux",
+      "version": "unknown"
+    },
+    "device": {
+      "name": "Linux x86_64",
+      "class": "desktop-high",
+      "cpu": "16 threads",
+      "memory_gb": 16,
+      "power_mode": "unknown"
+    },
+    "gpu": {
+      "adapter": "WebGPU adapter",
+      "required_features": [],
+      "limits": {
+        "maxTextureDimension2D": 8192,
+        "maxBindGroups": 4,
+        "maxBufferSize": 1073741824,
+        "maxStorageBufferBindingSize": 1073741824,
+        "maxComputeInvocationsPerWorkgroup": 256
+      }
+    },
+    "backend": "wasm",
+    "fallback_triggered": true,
+    "worker_mode": "main",
+    "cache_state": "unknown"
+  },
+  "workload": {
+    "kind": "graphics",
+    "name": "minimal-webgpu-triangle",
+    "input_profile": "single-canvas-960x540",
+    "renderer": "raw-webgpu",
+    "resolution": "960x540"
+  },
+  "metrics": {
+    "common": {
+      "time_to_interactive_ms": 279.5,
+      "init_ms": 0.6,
+      "success_rate": 1,
+      "peak_memory_note": "16 GB reported by browser",
+      "error_type": "Failed to acquire webgpu canvas context"
+    },
+    "graphics": {
+      "avg_fps": 0,
+      "p95_frametime_ms": 0,
+      "scene_load_ms": 0.6,
+      "resolution_scale": 1,
+      "taa_enabled": false,
+      "visual_artifact_note": "Animated triangle sample rendered without additional post-processing."
+    }
+  },
+  "status": "success",
+  "artifacts": {
+    "raw_logs": [
+      "./reports/logs/01-minimal-webgpu-starter.log"
+    ],
+    "deploy_url": "https://ai-webgpu-lab.github.io/tpl-webgpu-vanilla/",
+    "screenshots": [
+      "./reports/screenshots/01-minimal-webgpu-starter.png"
+    ]
+  }
+}
