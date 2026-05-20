@@ -2,8 +2,8 @@
 
 ## 1. 실험 요약
 - 저장소: tpl-webgpu-vanilla
-- 커밋 해시: d80d247
-- 실험 일시: 2026-04-22T06:54:53.975Z -> 2026-04-22T06:54:53.975Z
+- 커밋 해시: c6fdcec
+- 실험 일시: 2026-05-20T15:47:32.620Z -> 2026-05-20T15:47:32.620Z
 - 담당자: ai-webgpu-lab
 - 실험 유형: `infra`
 - 상태: `success`
@@ -26,7 +26,7 @@
 - 장치명: Linux x86_64
 - device class: `desktop-high`
 - CPU: 16 threads
-- 메모리: 16 GB
+- 메모리: 32 GB
 - 전원 상태: `unknown`
 
 ### GPU / 실행 모드
@@ -43,7 +43,7 @@
 - 입력 프로필: single-canvas-960x540
 - 데이터 크기: Raw WebGPU canvas starter with adapter/device acquisition and animated triangle sample.; automation=playwright-chromium
 - dataset: -
-- model_id 또는 renderer: -
+- model_id 또는 renderer: raw-webgpu
 - 양자화/정밀도: -
 - resolution: 960x540
 - context_tokens: -
@@ -51,23 +51,25 @@
 
 ## 5. 측정 지표
 ### 공통
-- time_to_interactive_ms: 279.5 ms
-- init_ms: 0.6 ms
+- time_to_interactive_ms: 229.6 ms
+- init_ms: 0.4 ms
 - success_rate: 1
-- peak_memory_note: 16 GB reported by browser
+- peak_memory_note: 32 GB reported by browser
 - error_type: Failed to acquire webgpu canvas context
 
 ### Workload
 - avg_fps: 0
 - p95_frametime_ms: 0 ms
-- scene_load_ms: 0.6 ms
+- scene_load_ms: 0.4 ms
+- ray_steps: -
+- taa states: false
 - fallback states: true
 - backends: wasm
 
 ## 6. 결과 표
 | Run | Scenario | Backend | Cache | Mean | P95 | Notes |
 |---|---|---:|---:|---:|---:|---|
-| 1 | Minimal WebGPU Starter | wasm | unknown | 0 | 0 | scene_load=0.6 ms, fallback=true |
+| 1 | Minimal WebGPU Starter | wasm | unknown | 0 | 0 | scene_load=0.4 ms, fallback=true |
 
 ## 7. 관찰
 - starter backend는 wasm이고 fallback_triggered=true로 기록됐다.

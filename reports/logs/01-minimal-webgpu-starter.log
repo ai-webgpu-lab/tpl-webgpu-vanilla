@@ -1,6 +1,7 @@
 repo=tpl-webgpu-vanilla
 scenario=Minimal WebGPU Starter
-captured_at=2026-04-22T06:54:55.889Z
+url_search=(default)
+captured_at=2026-05-20T15:47:34.226Z
 browser=Chromium 147.0.7727.15
 headless=true
 meta_scenario=minimal-webgpu-starter
@@ -16,8 +17,8 @@ status=success
 {
   "meta": {
     "repo": "tpl-webgpu-vanilla",
-    "commit": "d80d247",
-    "timestamp": "2026-04-22T06:54:53.975Z",
+    "commit": "c6fdcec",
+    "timestamp": "2026-05-20T15:47:32.620Z",
     "owner": "ai-webgpu-lab",
     "track": "infra",
     "scenario": "minimal-webgpu-starter",
@@ -27,9 +28,10 @@ status=success
       "browser_name": "Chromium",
       "browser_version": "147.0.7727.15",
       "headless": true,
-      "captured_at": "2026-04-22T06:54:55.889Z",
-      "captured_by": "zzragida"
-    }
+      "captured_at": "2026-05-20T15:47:34.226Z",
+      "captured_by": "codex"
+    },
+    "capture_scenario_id": "01-minimal-webgpu-starter"
   },
   "environment": {
     "browser": {
@@ -44,7 +46,7 @@ status=success
       "name": "Linux x86_64",
       "class": "desktop-high",
       "cpu": "16 threads",
-      "memory_gb": 16,
+      "memory_gb": 32,
       "power_mode": "unknown"
     },
     "gpu": {
@@ -68,20 +70,21 @@ status=success
     "name": "minimal-webgpu-triangle",
     "input_profile": "single-canvas-960x540",
     "renderer": "raw-webgpu",
-    "resolution": "960x540"
+    "resolution": "960x540",
+    "model_id": "raw-webgpu"
   },
   "metrics": {
     "common": {
-      "time_to_interactive_ms": 279.5,
-      "init_ms": 0.6,
+      "time_to_interactive_ms": 229.6,
+      "init_ms": 0.4,
       "success_rate": 1,
-      "peak_memory_note": "16 GB reported by browser",
+      "peak_memory_note": "32 GB reported by browser",
       "error_type": "Failed to acquire webgpu canvas context"
     },
     "graphics": {
       "avg_fps": 0,
       "p95_frametime_ms": 0,
-      "scene_load_ms": 0.6,
+      "scene_load_ms": 0.4,
       "resolution_scale": 1,
       "taa_enabled": false,
       "visual_artifact_note": "Animated triangle sample rendered without additional post-processing."
